@@ -16,11 +16,11 @@ define(['managerAPI',
 
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
-    let blackLabels = [];
-    let whiteLabels = [];
+    let ImmigrantLabels = [];
+    let NativeLabels = [];
 
     if (raceSet == 'a') {
-        blackLabels.push('African Americans');
+        ImmigrantLabels.push('African Americans');
         whiteLabels.push('European Americans');
     } else {
         blackLabels.push('Black people');
