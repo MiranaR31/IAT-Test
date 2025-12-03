@@ -17,11 +17,11 @@ define(['managerAPI',
     //Randomly select which of two sets of category labels to use.
     let raceSet = API.shuffle(['a','b'])[0];
     let ImmigrantLabels = [];
-    let NativeLabels = [];
+    let ItalianLabels = [];
 
     if (raceSet == 'a') {
-        ImmigrantLabels.push('African Americans');
-        whiteLabels.push('European Americans');
+        ImmigrantLabels.push('Natives');
+        ItalianLabels.push('Italians');
     } else {
         blackLabels.push('Black people');
         whiteLabels.push('White people');
@@ -32,8 +32,8 @@ define(['managerAPI',
         //YBYB: change when copying back to the correct folder
         baseURL: './images/',
         raceSet:raceSet,
-        blackLabels:blackLabels,
-        whiteLabels:whiteLabels,
+        ImmigrantLabels:ImmigrantLabels,
+        NativeLabels:NativeLabels,
         //Select randomly what attribute words to see. 
         //Based on Axt, Feng, & Bar-Anan (2021).
         posWords : API.shuffle([
